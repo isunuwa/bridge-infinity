@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 480px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include breakpoint(sm) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include breakpoint(md) {
+    max-width: 1024px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include breakpoint(lg) {
+    max-width: 1366px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include breakpoint(xl) {
+    max-width: 1584px;
+
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+// invert color in primary section
+.primary-back {
+  background-color: $primary-color;
+  color: white;
+}
+
+footer,
+.content-info {
+  padding: 3rem 0;
+}
+
+.bg-grey {
+  background-color: $grey-100;
+}
+
+.md-max,
+.md-lg {
+  margin: 0 auto;
+}
+
+.md-max {
+  max-width: 720px;
+}
+
+.md-lg {
+  max-width: 992px;
+}
+
+.text-center {
+  text-align: center;
+}

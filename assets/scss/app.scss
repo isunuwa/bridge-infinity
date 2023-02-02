@@ -1,0 +1,10 @@
+@import "variables";
+@import "mixins";
+@import "layout";
+@import "fonts";
+
+@import "components/navbar";
+@import "components/footer";
+@import "components/breadcrumb";
+
+// sass --watch assets/scss/app.scss assets/css/app.css --style compressed
