@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bridge Infinity</title>
+
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar-wrapper">
+          <div class="left">
+            <h1>
+              <img
+                src="assets/images/logo.png"
+                alt="Bridge Infobit"
+                width="200"
+                height="auto"
+              />
+            </h1>
+          </div>
+          <div class="right">
+            <nav>
+              <ul class="nav-menu">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="about-us.html">About Us</a></li>
+                <li class="projects"><a href="services.html">Services</a></li>
+                <li class="career"><a href="career.html">Career</a></li>
+                <li class="contact active">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="breadcrumb primary-back">
+      <div class="container">
+        <div class="bread-wrapper">
+          <div class="bread-page_title">
+            <span class="tag-h4">Contact Us</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="image-section service-image-wrapper ps-relative">
+        <div class="gradient full-gradient"></div>
+        <img
+          class="full-width image-cover"
+          src="assets/images/customer-support-3.png"
+          alt="customer support image"
+        />
+      </div>
+
+      <!-- body section -->
+      <div>
+        <div class="container">
+          <div class="content-info content-info_contact">
+            <div class="mx-md">
+              <p class="tag-h4 tag-title text-center">
+                Bridge Infobit is here to help you and get your business on the
+                right track!
+              </p>
+              <p class="tag-p text-center">
+                Talk to a consultant before we give you a quote.
+                <br />
+                It only takes a minute to complete the form below and we will
+                give you years of success in growing your business.
+              </p>
+            </div>
+            <div class="map-wrapper">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- body section -->
+    </main>
+
+    <footer class="bg-grey">
+      <div class="container">
+        <section class="footer-wrapper">
+          <div>
+            <ul>
+              <li>
+                <span class="footer-icon">
+                  <img src="assets/images/phone.png" alt="phone icon" />
+                </span>
+                <div class="link-items">
+                  <p class="link-item_heading">
+                    <a href="tel:+9779800000000" aria-label="Telephone"
+                      >Telephone</a
+                    >
+                  </p>
+                  <p>+977-9800000000<br />+977-01-00000</p>
+                </div>
+              </li>
+              <li>
+                <span class="footer-icon">
+                  <img src="assets/images/mail.png" alt="mail icon" />
+                </span>
+                <div class="link-items">
+                  <p class="link-item_heading">Email Us</p>
+                  <p>
+                    <a href="mailto:contact@bridgeinfobit.com"
+                      >contact@bridgeinfobit.com</a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="footer-icon">
+                  <img src="assets/images/location.png" alt="mail icon" />
+                </span>
+                <div class="link-items">
+                  <p class="link-item_heading">Visit Us</p>
+                  <p>Kathmandu, Nepal</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="copyright">
+          <span>Copyright © 2023 Bridge Infobit. All Rights Reserved.</span>
+        </section>
+      </div>
+    </footer>
+
+    <!-- maps script -->
+    <script>
+      function myMap() {
+        var mapProp = {
+          center: new google.maps.LatLng(51.508742, -0.12085),
+          zoom: 5,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("googleMap"),
+          mapProp
+        );
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  </body>
+</html>
