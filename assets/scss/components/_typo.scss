@@ -1,0 +1,7 @@
+.typo1 {
+  [class^="tag-"] {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

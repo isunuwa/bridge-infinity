@@ -60,7 +60,8 @@ footer,
 }
 
 .md-max,
-.md-lg {
+.md-lg,
+.md-md {
   margin: 0 auto;
 }
 
@@ -68,8 +69,12 @@ footer,
   max-width: 720px;
 }
 
-.md-lg {
+.md-md {
   max-width: 992px;
+}
+
+.md-lg {
+  max-width: 1200px;
 }
 
 .text-center {
@@ -89,6 +94,14 @@ footer,
   &.grid-col-2 {
     @include breakpoint(sm) {
       grid-template-columns: auto auto;
+      column-gap: 15px;
+      row-gap: 10px;
+    }
+  }
+
+  &.grid-col-3 {
+    @include breakpoint(sm) {
+      grid-template-columns: auto auto auto;
       column-gap: 15px;
       row-gap: 10px;
     }
