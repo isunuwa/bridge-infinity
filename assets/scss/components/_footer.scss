@@ -2,6 +2,7 @@
   ul {
     list-style: none;
     text-decoration: none;
+    overflow: hidden;
   }
 
   .link-items {
@@ -9,7 +10,6 @@
     top: -28px;
     left: 30px;
     color: $grey-600;
-    overflow: hidden;
   }
 
   .link-item_heading {
