@@ -1,7 +1,12 @@
 .typo1 {
-  [class^="tag-"] {
+  [class^="tag-"],
+  p {
     &:not(:last-child) {
       margin-bottom: 5px;
     }
+  }
+
+  ul {
+    margin-left: 1em;
   }
 }
