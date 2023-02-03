@@ -75,3 +75,47 @@ footer,
 .text-center {
   text-align: center;
 }
+
+.m-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 15px;
+
+  &.grid-col-2 {
+    @include breakpoint(sm) {
+      grid-template-columns: auto auto;
+      column-gap: 15px;
+      row-gap: 10px;
+    }
+  }
+}
+
+.image-cover {
+  background-size: cover;
+}
+
+.image-section {
+  line-height: 0;
+}
+
+.ps-relative {
+  position: relative;
+}
+
+.gradient {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.full-gradient {
+  background: rgba(0, 0, 0, 0.3);
+}
