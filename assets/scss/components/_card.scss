@@ -1,0 +1,29 @@
+// card starting with section
+.section-overall,
+.other-section-overall {
+  section {
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: 0 0 20px 2px #e9eaeb;
+    border-radius: 5px;
+    overflow: hidden;
+    @include transition(box-shadow 0.3s ease);
+
+    &:hover {
+      //   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: 0 0 20px 2px #dbdbdb;
+    }
+
+    .section-block_description {
+      //   font-weight: 300;
+      color: $grey-800;
+      //   font-size: 15px;
+      //   letter-spacing: 1px;
+    }
+  }
+}
+
+.other-section-overall {
+  .other-section-wrapper {
+    padding: 15px;
+  }
+}

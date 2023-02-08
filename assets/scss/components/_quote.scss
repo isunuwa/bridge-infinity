@@ -1,0 +1,30 @@
+.quote-pseudo {
+  &::before,
+  &::after {
+    position: relative;
+    background-size: 25px 18px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    content: "";
+    top: -5px;
+  }
+
+  &::before {
+    background-image: url("../images/quotes-start-icon.png");
+  }
+
+  &::after {
+    background-image: url("../images/quotes-end-icon.png");
+  }
+}
+
+.quote-block {
+  padding: 20px 0;
+}
+
+.quote-title {
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+}

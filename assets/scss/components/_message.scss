@@ -1,0 +1,41 @@
+.about-message{
+    padding: 3.5rem 0;
+    background-color: $primary-color;
+    color: $grey-600;
+
+    .msg-wrapper{
+        background-color: white;
+        margin-top: 40px;
+        padding: 4rem;
+        position: relative;
+
+
+        &::before, &::after{
+            background-color: #fff;
+            border-radius: 20px 20px 0 0;
+            content: "";
+            height: 40px;
+            position: absolute;
+            top: -40px;
+            width: 4px;
+        }
+
+        &::before{
+            left: 20%;
+        }
+
+        &::after{
+            right: 20%;
+        }
+    }
+    
+    .ap-span{
+        margin-top: 15px;
+        color: $primary-color;
+        display: block;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 300;
+        text-align: center;
+    }
+}

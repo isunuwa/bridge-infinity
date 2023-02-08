@@ -7,6 +7,8 @@
     <title>Bridge Infinity</title>
 
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   </head>
   <body>
     <header>
@@ -14,12 +16,7 @@
         <div class="navbar-wrapper">
           <div class="left">
             <h1>
-              <img
-                src="assets/images/logo.png"
-                alt="Bridge Infobit"
-                width="200"
-                height="auto"
-              />
+              <img src="assets/images/logo.png" alt="Bridge Infobit" />
             </h1>
           </div>
           <div class="right">
@@ -41,9 +38,9 @@
       <!-- body section -->
       <div class="bg-grey">
         <div class="container">
-          <div class="content-info">
+          <div class="content-info content-info-quote">
             <div class="quote-block md-lg">
-              <p class="tag-h4 text-center">
+              <p class="quote-pseudo quote-title tag-h4 text-center">
                 Bridge Infobit utilizes the latest technology to help your
                 company excel and succeed. We are totally dedicated to
                 delivering cutting edge and cost-effective solutions for any of
@@ -54,21 +51,60 @@
         </div>
       </div>
 
-      <div class="image-section support-image-wrapper ps-relative">
-        <div class="gradient full-gradient"></div>
-        <img
-          class="image-cover full-width"
-          src="assets/images/customer-support-1.png"
-          alt="customer support image"
-        />
+      <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <div class="banner-wrapper image-section_md support-image-wrapper ps-relative">
+                <div class="banner-content-wrapper container">
+                  <div class="banner-quote">
+                    <p class="tag-p">
+                      Proven work of excellence in different areas of services.
+                    </p>
+                  </div>
+                </div>
+        
+                <div class="image-section support-image-wrapper banner-image_wrap">
+                  <div class="gradient full-gradient"></div>
+                  <img
+                    class="image-cover full-width"
+                    src="assets/images/customer-support-1.png"
+                    alt="customer support image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="banner-wrapper image-section_md support-image-wrapper ps-relative">
+                <div class="banner-content-wrapper container">
+                  <div class="banner-quote">
+                    <p class="tag-p">
+                      Providing support since 2010.
+                    </p>
+                  </div>
+                </div>
+        
+                <div class="image-section support-image-wrapper banner-image_wrap">
+                  <div class="gradient full-gradient"></div>
+                  <img
+                    class="image-cover full-width"
+                    src="assets/images/customer-support-2.png"
+                    alt="customer support image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <!-- body section -->
       <article>
         <div class="container">
           <div
             class="content-info m-x-auto section-overall section-overall-top"
           >
-            <p class="tag-h4 section-block_title primary-back">
+            <p class="tag-h4 br-5 section-block_title primary-back">
               Free Consultation
             </p>
           </div>
@@ -130,6 +166,16 @@
       </article>
     </main>
 
+    <!-- some words -->
+    <div class="about-message">
+      <div class="container md-lg">
+        <div class="msg-wrapper">
+          <p class="ap-p text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque rem nesciunt natus deserunt molestiae cumque eligendi itaque? Rem, voluptatum!</p>
+          <span class="ap-span">(Message from CEO)</span>
+        </div>
+      </div>
+    </div>
+
     <footer class="bg-grey">
       <div class="container">
         <section class="footer-wrapper">
@@ -178,5 +224,22 @@
         </section>
       </div>
     </footer>
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          smartSpeed: 700,
+        });
+      });
+    </script>
   </body>
 </html>
