@@ -254,9 +254,16 @@
           $("#loader").fadeIn(100);
           let baseUrl = window.location.origin;
 
-          setTimeout(() => {
-            window.location.href = baseUrl + '/' + $(this).attr('href');
-          }, 200);
+          if (window.location.origin === "https://isunuwa.github.io") { 
+            setTimeout(() => {
+              window.location.href = baseUrl + '/bridge-infobit-frontend/' + $(this).attr('href');
+            }, 200);
+          }
+          else{
+            setTimeout(() => {
+              window.location.href = baseUrl + '/' + $(this).attr('href');
+            }, 200);
+          }
         });
 
         setTimeout(() => {
