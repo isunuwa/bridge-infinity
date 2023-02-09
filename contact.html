@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
-    <div id="loader"></div> 
+    <div id="loader">
+      <span class="loader-asset"></span>
+    </div>
     <header>
       <div class="container">
         <div class="navbar-wrapper">
@@ -151,6 +153,16 @@
     <!-- loader -->
     <script type="text/javascript">  
       $(document).ready(function() {  
+        $('.nav-menu a').on('click', function(e) {
+          e.preventDefault();
+          $("#loader").fadeIn(100);
+          let baseUrl = window.location.origin;
+
+          setTimeout(() => {
+            window.location.href = baseUrl + '/' + $(this).attr('href');
+          }, 200);
+        });
+
         setTimeout(() => {
           $("#loader").fadeOut(1000);  
         }, 500);
