@@ -50,16 +50,15 @@
     &:hover,
     &.active {
       a {
-        background-color: $dark-primary-color;
+        color: $dark-primary-color;
       }
     }
   }
 
   a {
     text-decoration: none;
-    padding: 8px 16px;
-    background-color: $primary-color;
-    color: white;
+    padding: 8px 10px;
+    color: $grey-700;
     border-radius: 5px;
 
     &:focus-visible {

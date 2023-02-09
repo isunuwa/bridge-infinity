@@ -1,14 +1,21 @@
 .about-message{
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
     background-color: $primary-color;
     color: $grey-600;
+
+    @include breakpoint(md){
+        padding: 3.5rem 0;
+    }
 
     .msg-wrapper{
         background-color: white;
         margin-top: 40px;
-        padding: 4rem;
+        padding: 1.5rem;
         position: relative;
-
+        
+        @include breakpoint(md){
+            padding: 4rem;
+        }
 
         &::before, &::after{
             background-color: #fff;

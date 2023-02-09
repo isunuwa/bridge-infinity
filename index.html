@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   </head>
   <body>
+    <div id="loader"></div> 
     <header>
       <div class="container">
         <div class="navbar-wrapper">
@@ -229,7 +230,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
 
-    <script>
+    <!-- slider crousel -->
+    <script type="text/javascript">
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
           items: 1,
@@ -241,5 +243,12 @@
         });
       });
     </script>
+
+    <!-- loader -->
+    <script type="text/javascript">  
+      $(document).ready(function() {  
+         $("#loader").fadeOut(1000);  
+      });
+   </script>
   </body>
 </html>

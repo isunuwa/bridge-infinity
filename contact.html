@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
+    <div id="loader"></div> 
     <header>
       <div class="container">
         <div class="navbar-wrapper">
@@ -144,6 +145,14 @@
       }
     </script>
 
+    <script src="assets/js/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    <!-- loader -->
+    <script type="text/javascript">  
+      $(document).ready(function() {  
+         $("#loader").fadeOut(1000);  
+      });
+   </script>
   </body>
 </html>
