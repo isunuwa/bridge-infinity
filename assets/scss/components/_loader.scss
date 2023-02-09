@@ -1,10 +1,17 @@
-#loader {  
+#loader, .loader-asset{
     position: fixed;  
-    left: 0px;  
-    top: 0px;  
+    left: 0;  
+    top: 0;  
     width: 100%;  
-    height: 100%;  
-    z-index: 9999;  
-    background: url('../images/loader.gif') 50% 50% no-repeat $primary-color;  
+    height: 100%;
+}
+
+#loader {  
+    background: linear-gradient(140deg, $primary-color, #1F1C18) no-repeat;  
+    z-index: 10;  
+}
+
+.loader-asset{
+    background: url('../images/loader.gif') 50% 50% no-repeat;  
     background-size: 30px;
-} 
+}

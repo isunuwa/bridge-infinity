@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   </head>
   <body>
-    <div id="loader"></div> 
+    <div id="loader">
+      <span class="loader-asset"></span>
+    </div> 
     <header>
       <div class="container">
         <div class="navbar-wrapper">
@@ -247,7 +249,9 @@
     <!-- loader -->
     <script type="text/javascript">  
       $(document).ready(function() {  
-         $("#loader").fadeOut(1000);  
+        setTimeout(() => {
+          $("#loader").fadeOut(1000);  
+        }, 500);
       });
    </script>
   </body>
